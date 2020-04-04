@@ -19,12 +19,12 @@
       >
         <div class="item__marker" @click="itemClicked(item)">
           <q-icon
-            name="fad fa-map-marker"
-            color="white"
+            name="fas fa-map-marker"
+            :color="item.need ? 'orange' : 'green'"
             class="item__maker--icon"
           ></q-icon>
           <div class="item__marker--icon--type" v-if="item.icon">
-            <q-icon :name="item.icon" :color="item.color"></q-icon>
+            <q-icon :name="`fas fa-${item.icon}`" color="white"></q-icon>
           </div>
         </div>
       </vl-overlay>
@@ -70,24 +70,21 @@ export default {
       items: [
         {
           name: 'test',
-          icon: 'fad fa-toilet-paper',
-          color: 'warning',
+          icon: 'toilet-paper',
           message: 'Behöver toalettpapper!',
           need: true,
           longlat: [15.653283901281203, 62.519064483876406],
         },
         {
           name: 'test2',
-          icon: 'fad fa-carrot',
-          color: 'negative',
+          icon: 'carrot',
           message: 'Behöver grönsaker!',
           need: true,
           longlat: [15.694290759935752, 62.52940206072094],
         },
         {
           name: 'test3',
-          icon: 'fad fa-question',
-          color: 'positive',
+          icon: 'question',
           message: 'Behöver någon handla?',
           need: false,
           longlat: [15.63196481944923, 62.53190842767643],
@@ -113,7 +110,7 @@ export default {
     width: 4rem;
 
     &--icon {
-      color: $white;
+      color: $blue;
 
       &--type {
         position: absolute;

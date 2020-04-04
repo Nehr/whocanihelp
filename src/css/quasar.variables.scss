@@ -29,18 +29,20 @@ $white: #f2f2f2;
 $gray: #3e423a;
 $violet: #7304fb;
 $red: #ff3201;
-$orange: #f2ab05;
-$green: #aaff00;
+// $orange: #f2ab05;
+// $green: #aaff00;
 $purple: #aa00ff;
 $pink: #ff00aa;
-// $blue: #0dabfa;
-
-$blue: #0433bf;
 
 /*** APP COLORS ***/
-$primary: #95c11f;
-$secondary: #ffed00;
 $text-color: #1b1b1b;
+$orange: #fa7921; // Only bold text on this
+$yellow: #fde74c;
+$green: #9fcc2e;
+$blue: #5bc0eb;
+
+$primary: $green;
+$secondary: $yellow;
 
 /*** RESPONSIVE ***/
 $phone-max-width: 768px;

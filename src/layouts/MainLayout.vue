@@ -1,17 +1,26 @@
 <template>
   <q-layout view="hHh LpR lFr">
-    <q-footer class="bg-blue text-light">
-      <q-toolbar class="footer__navigation">
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="~assets/sad.svg" />
-          </q-avatar>
-          <h1>Vem kan jag hjälpa?</h1>
-        </q-toolbar-title>
-        <q-separator vertical />
-        <q-btn stretch flat no-caps icon="fal fa-search" label="Search" />
-        <q-separator vertical />
-        <q-btn stretch flat label="Link" />
+    <q-footer>
+      <q-toolbar
+        class="bg-white text-dark footer__navigation row no-wrap justify-between"
+      >
+        <q-btn
+          stretch
+          flat
+          no-caps
+          icon="fal fa-question-circle"
+          label="Who can I help?"
+          class="q-pt-sm"
+        />
+        <q-btn
+          stretch
+          flat
+          no-caps
+          icon="fal fa-exclamation-circle"
+          label="I need help"
+          class="q-pt-sm"
+        />
+        <q-btn stretch flat no-caps icon-right="fal fa-cog" class="q-pt-sm" />
       </q-toolbar>
     </q-footer>
 
@@ -43,8 +52,10 @@ export default {
 footer {
   max-width: 600px;
   margin: 0 auto;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  @include lg() {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
 
   h1 {
     font-size: 1rem;
@@ -55,11 +66,15 @@ footer {
     margin: 0 0.5rem;
   }
 
+  .footer__navigation {
+    padding: 0;
+  }
+
   .q-toolbar__title {
     display: none;
-    @include lg() {
+    /* @include lg() {
       display: block;
-    }
+    } */
   }
 }
 </style>
