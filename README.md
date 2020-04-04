@@ -2,6 +2,8 @@
 
 Our contribution to Hack the crisis 2020. A quasar web app that can help people in need.
 
+More text coming soon...
+
 ## Install the dependencies
 
 ```bash
