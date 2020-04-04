@@ -12,6 +12,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.13.0",
     "@quasar/extras": "^1.0.0",
     "quasar": "^1.0.0",
     "vuelayers": "^0.11.22"
