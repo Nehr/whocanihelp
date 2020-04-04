@@ -1,26 +1,31 @@
-# Hack the Crisis 2020 (hackthecrisis_2020)
+# Vem kan jag hjälpa? (hackthecrisis_2020)
 
 Our contribution to Hack the crisis 2020
 
 ## Install the dependencies
+
 ```bash
 npm install
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
+
 ```bash
 quasar dev
 ```
 
 ### Lint the files
+
 ```bash
 npm run lint
 ```
 
 ### Build the app for production
+
 ```bash
 quasar build
 ```
 
 ### Customize the configuration
+
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
