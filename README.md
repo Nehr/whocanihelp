@@ -1,6 +1,6 @@
 # Vem kan jag hjälpa? (hackthecrisis_2020)
 
-Our contribution to Hack the crisis 2020
+Our contribution to Hack the crisis 2020. A quasar web app that can help people in need.
 
 ## Install the dependencies
 
