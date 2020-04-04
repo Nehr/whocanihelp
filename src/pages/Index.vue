@@ -6,17 +6,9 @@
       data-projection="EPSG:4326"
       style="height: 100%;"
     >
-      <vl-view
-        :zoom.sync="zoom"
-        :center.sync="center"
-        :rotation.sync="rotation"
-      ></vl-view>
+      <vl-view :zoom.sync="zoom" :center.sync="center" :rotation.sync="rotation"></vl-view>
 
-      <vl-overlay
-        v-for="item in items"
-        :key="item.name"
-        :position="item.longlat"
-      >
+      <vl-overlay v-for="item in items" :key="item.id" :position="item.longlat">
         <div class="item__marker" @click="itemClicked(item)">
           <q-icon
             name="fas fa-map-marker"
@@ -39,6 +31,8 @@
 </template>
 
 <script>
+import devData from '../devData/data.json';
+
 export default {
   watch: {
     geolocPosition(__longlat) {
@@ -50,8 +44,18 @@ export default {
         console.log('new geo', this.geolocPosition);
       }
     },
+    center(__longlat) {
+      console.log(`[${__longlat[0]}, ${__longlat[1]}]`);
+    },
   },
   methods: {
+    getOtherPlaces() {
+      console.log(devData);
+      const data = devData.items;
+      data.forEach(item => {
+        this.items.push(item);
+      });
+    },
     itemClicked(__item) {
       console.log(__item);
     },
@@ -60,30 +64,31 @@ export default {
     console.log('center', this.center);
     console.log('zoom', this.zoom);
     console.log('geo', this.geolocPosition);
+    this.getOtherPlaces();
   },
   data() {
     return {
       zoom: 5,
-      center: [8.397111748677801, 64.01244428998672],
+      center: [17.27169173840924, 62.39192228016543],
       rotation: 0,
-      geolocPosition: this.$event,
+      geolocPosition: undefined,
       items: [
         {
-          name: 'test',
+          id: 'test',
           icon: 'toilet-paper',
           message: 'Behöver toalettpapper!',
           need: true,
           longlat: [15.653283901281203, 62.519064483876406],
         },
         {
-          name: 'test2',
+          id: 'test2',
           icon: 'carrot',
           message: 'Behöver grönsaker!',
           need: true,
           longlat: [15.694290759935752, 62.52940206072094],
         },
         {
-          name: 'test3',
+          id: 'test3',
           icon: 'question',
           message: 'Behöver någon handla?',
           need: false,

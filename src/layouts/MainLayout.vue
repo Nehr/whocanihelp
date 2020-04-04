@@ -1,9 +1,7 @@
 <template>
   <q-layout view="hHh LpR lFr">
     <q-footer>
-      <q-toolbar
-        class="bg-white text-dark footer__navigation row no-wrap justify-between"
-      >
+      <q-toolbar class="bg-white text-dark footer__navigation row no-wrap justify-between">
         <q-btn
           stretch
           flat
@@ -31,11 +29,27 @@
 </template>
 
 <script>
+/*
+stuff to do:
+SETTINGS
+- color blind mode
+- take me home
+WHO CAN I HELP
+- list of items, contact
+I NEED HELP
+- list of items, contact
+- quote: it's okay to ask:
+“Asking for help with shame says:
+You have the power over me.
+Asking with condescension says:
+I have the power over you.
+But asking for help with gratitude says:
+We have the power to help each other.”
+― Amanda Palmer, The Art of Asking; or, How I Learned to Stop Worrying and Let People Help
+*/
 export default {
   name: 'MainLayout',
-
   components: {},
-
   data() {
     return {};
   },

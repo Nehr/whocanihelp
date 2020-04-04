@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "id": "test4",
+            "icon": "toilet-paper",
+            "message": "Behöver toalettpapper!",
+            "need": true,
+            "longlat": [
+                16.17305618645771,
+                62.496714448305255
+            ]
+        },
+        {
+            "id": "test5",
+            "icon": "toilet-paper",
+            "message": "Behöver toalettpapper!",
+            "need": true,
+            "longlat": [
+                16.17418723933885,
+                62.496910590723786
+            ]
+        },
+        {
+            "id": "test6",
+            "icon": "toilet-paper",
+            "message": "Behöver toalettpapper!",
+            "need": true,
+            "longlat": [
+                16.178121205538684,
+                62.49951558343383
+            ]
+        }
+    ]
+}
