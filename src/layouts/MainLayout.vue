@@ -34,6 +34,7 @@ stuff to do:
 SETTINGS
 - color blind mode
 - take me home
+- lang
 WHO CAN I HELP
 - list of items, contact
 I NEED HELP
