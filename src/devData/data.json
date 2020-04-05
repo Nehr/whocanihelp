@@ -1,34 +1,64 @@
 {
-    "items": [
-        {
-            "id": "test4",
-            "icon": "toilet-paper",
-            "message": "Behöver toalettpapper!",
-            "need": true,
-            "longlat": [
-                16.17305618645771,
-                62.496714448305255
-            ]
-        },
-        {
-            "id": "test5",
-            "icon": "toilet-paper",
-            "message": "Behöver toalettpapper!",
-            "need": true,
-            "longlat": [
-                16.17418723933885,
-                62.496910590723786
-            ]
-        },
-        {
-            "id": "test6",
-            "icon": "toilet-paper",
-            "message": "Behöver toalettpapper!",
-            "need": true,
-            "longlat": [
-                16.178121205538684,
-                62.49951558343383
-            ]
-        }
-    ]
+  "items": [
+    {
+      "id": "xxyyzz-xyz-001",
+      "user": "Jane Doe",
+      "time": "1585907323918",
+      "icon": "toilet-paper",
+      "message": "Behöver toalettpapper! Jag kan betala för mig.",
+      "type": "toiletpaper",
+      "need": true,
+      "longlat": [15.653283901281203, 62.519064483876406]
+    },
+    {
+      "id": "xxyyzz-xyz-002",
+      "user": "John Doe",
+      "time": "1585907323918",
+      "icon": "carrot",
+      "type": "food_veg",
+      "message": "Behöver grönsaker! Gärna morötter eller tomater.",
+      "need": true,
+      "longlat": [15.694290759935752, 62.52940206072094]
+    },
+    {
+      "id": "xxyyzz-xyz-003",
+      "user": "Jane Doe",
+      "time": "1585993723918",
+      "icon": "question",
+      "type": "service",
+      "message": "Behöver någon handla? Jag ska iväg och handla imorgon och kan tänka mig köpa med lite saker om någon behöver.",
+      "need": false,
+      "longlat": [15.63196481944923, 62.53190842767643]
+    },
+    {
+      "id": "xxyyzz-xyz-004",
+      "user": "John Doe",
+      "time": "1585993723918",
+      "icon": "toilet-paper",
+      "type": "toiletpaper",
+      "message": "Behöver toalettpapper! Är sjuk och kan inte gå ut.",
+      "need": true,
+      "longlat": [16.17305618645771, 62.496714448305255]
+    },
+    {
+      "id": "xxyyzz-xyz-005",
+      "user": "Jane Doe",
+      "time": "1586080186432",
+      "icon": "toilet-paper",
+      "type": "toiletpaper",
+      "message": "Behöver någon toalettpapper? Jag har en hel del över.",
+      "need": false,
+      "longlat": [16.17418723933885, 62.496910590723786]
+    },
+    {
+      "id": "xxyyzz-xyz-006",
+      "user": "John Doe",
+      "time": "1586080186432",
+      "icon": "toilet-paper",
+      "type": "toiletpaper",
+      "message": "Behöver toalettpapper! AKUT!",
+      "need": true,
+      "longlat": [16.178121205538684, 62.49951558343383]
+    }
+  ]
 }

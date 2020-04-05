@@ -2,7 +2,7 @@
   "name": "hackthecrisis_2020",
   "version": "0.0.1",
   "description": "Our contribution to Hack the crisis 2020",
-  "productName": "Hack the Crisis 2020",
+  "productName": "Vem kan jag hjälpa?",
   "cordovaId": "org.cordova.quasar.app",
   "capacitorId": "",
   "author": "thom@websquid.se",

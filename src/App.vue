@@ -29,6 +29,7 @@ body {
 #q-app {
   > .q-layout {
     > .q-page-container {
+      padding-top: 0 !important;
       padding-bottom: 0 !important;
     }
   }

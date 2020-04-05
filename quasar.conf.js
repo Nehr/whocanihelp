@@ -97,13 +97,13 @@ module.exports = function (ctx) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: 'Hack the Crisis 2020',
-        short_name: 'Hack the Crisis 2020',
+        name: 'Vem kan jag hjälpa?',
+        short_name: 'Vem',
         description: 'Our contribution to Hack the crisis 2020',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#ffffff',
-        theme_color: '#027be3',
+        background_color: '#9fcc2e',
+        theme_color: '#1b1b1b',
         icons: [
           {
             src: 'statics/icons/icon-128x128.png',
