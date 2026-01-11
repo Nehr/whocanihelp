@@ -18,7 +18,7 @@
     "vuelayers": "^0.11.22"
   },
   "devDependencies": {
-    "@quasar/app": "^1.0.0",
+    "@quasar/app": "^3.3.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
